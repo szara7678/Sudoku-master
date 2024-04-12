@@ -1,9 +1,10 @@
 ﻿html,body
 {
-    width: 100%;
-    height: 100%;
-    border: 0px;
-    overflow: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  /* 스크롤바 제거 */
+    width: 100%;       /* 최대 너비 설정 */
+    height: 100%;      /* 최대 높이 설정 */
 }
 
 body
