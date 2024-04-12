@@ -1,4 +1,4 @@
-﻿html,body
+﻿﻿html,body
 {
     margin: 0;
     padding: 0;
@@ -88,7 +88,7 @@ a:hover
     margin-right: auto;
     margin-top: 20px;
     box-shadow: 0px 0px 30px #000000;
-    -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 0px 0px 30px rgb(0, 0, 0);
     -webkit-box-shadow: 0 0 30px #000000;
 }
 
@@ -122,7 +122,8 @@ td.boardCellGroupA td.boardCell
 {
     width: 32px;
     height: 32px;
-    border: 1px solid #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    /*transform: scale(0.9); !* 요소를 99%로 축소 *!*/
     background-color: #ffffff;
 }
 
@@ -130,7 +131,8 @@ td.boardCellGroupB td.boardCell
 {
     width: 32px;
     height: 32px;
-    border: 1px solid rgba(0, 0, 0, 0.64);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    /*transform: scale(0.9); !* 요소를 99%로 축소 *!*/
     background-color: #ffffff;
 }
 
@@ -150,7 +152,7 @@ td.boardCellGroupB td.boardCell
     height: 32px;
     padding: 0px;
     margin: 0px;
-    border: 1px solid #000000;
+    /*border: 0px solid rgb(255, 255, 255);*/
 }
 
 .editValue:hover
