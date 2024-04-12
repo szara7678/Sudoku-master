@@ -2,7 +2,7 @@
 {
     margin: 0;
     padding: 0;
-    overflow: hidden;  /* 스크롤바 제거 */
+    overflow: auto;  /* 스크롤바 제거 */
     width: 100%;       /* 최대 너비 설정 */
     height: 100%;      /* 최대 높이 설정 */
 }
@@ -77,8 +77,9 @@ a:hover
 
 #sudokuBoard
 {
-    width: 426px;
-    margin-left: 40px;
+    width: 318px;
+    margin-left: 10px;
+    margin-top: 20px;
     float: left;
     box-shadow: 0px 0px 30px #000000;
     -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.51);
@@ -117,16 +118,16 @@ td.boardCellGroupA,td.boardCellGroupB
 
 td.boardCellGroupA td.boardCell
 {
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
     border: 1px solid #ffffff;
     background-color: #ffffff;
 }
 
 td.boardCellGroupB td.boardCell
 {
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
     border: 1px solid #ffffff;
     background-color: #ffffff;
 }
@@ -136,14 +137,14 @@ td.boardCellGroupB td.boardCell
     font-family: Segoe UI, Arial;
     text-align: center;
     vertical-align: middle;
-    font-size: 30px;
+    font-size: 20px;
     color: #000000;
 }
 
 .staticValue,.editValue
 {
-    width: 42px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
     padding: 0px;
     margin: 0px;
     border: 1px solid #000000;
@@ -158,8 +159,8 @@ label
 {
     position: relative;
     top: 3px;
-    line-height: 24px;
-    font-size: 16px;
+    line-height: 20px;
+    font-size: 12px;
     color: #000000;
     margin-left: 20px;
 }
@@ -169,7 +170,7 @@ select
     font-family: Arial;
     color: #000000;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 12px;
     border-top: solid 1px #CCCCCC;
     border-left: solid 1px #E2E3EA;
     border-bottom: solid 1px #FFFFFF;
@@ -195,17 +196,16 @@ select
 .editValue input
 {
     font-family: Segoe UI, Arial;
-    font-size: 30px;
+    font-size: 24px;
     color: #f10a0a;
-    width: 44px;
-    /*height: 44px;*/
+    width: 32px;
+    height: 32px;
     padding: 0px;
     border: 0px;
     background: none !important;
     text-align: center;
     vertical-align: middle;
     position: relative;
-    left: -1px;
 }
 
 input[type="submit"]
@@ -239,10 +239,11 @@ input[type="submit"].gameControls
 
 .gameControlSet
 {
-    height: 142px;
+    height: 60px;
     position: relative;
-    top: -8px;
     margin-left: 40px;
+    display: flex;        /* Flexbox 모델을 사용하여 자식 요소들을 행으로 배치 */
+    align-items: center;  /* 자식 요소들을 세로 중앙에 맞춤 */
 }
 
 #buttonSolve
@@ -283,6 +284,7 @@ small
     font-size: 18px;
     font-weight: bold;
     color: #000000;
+    margin-left: 20px;
 }
 
 .errorsFound
@@ -290,6 +292,7 @@ small
     font-size: 18px;
     font-weight: bold;
     color: #f10a0a;
+    margin-left: 20px;
 }
 
 .error
