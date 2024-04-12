@@ -82,6 +82,7 @@ a:hover
     box-shadow: 0px 0px 30px #000000;
     -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.51);
     -webkit-box-shadow: 0 0 30px #000000;
+    align-content: center;
 }
 
 #Column2
@@ -158,16 +159,16 @@ label
     position: relative;
     top: 3px;
     line-height: 24px;
-    font-size: 15px;
+    font-size: 16px;
     color: #000000;
 }
 
 select
 {
     font-family: Arial;
-    color: #999999;
+    color: #000000;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 16px;
     border-top: solid 1px #CCCCCC;
     border-left: solid 1px #E2E3EA;
     border-bottom: solid 1px #FFFFFF;

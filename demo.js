@@ -804,8 +804,7 @@ function initialize() {
     var result = verifySolution(board);
     if(result['valid']) {
     
-      var validMessages = [ "LOOKIN GOOD", "KEEP GOING", "AWESOME", "EXCELLENT", 
-        "NICE", "SWEET", "LOOKS GOOD TO ME"];
+      var validMessages = [ "좋아요!", "잘하고 있어요!", "완벽해요!", "대단해요!"];
       
       if(verifySolution(board, true)['valid']) {
         winBlock.style.display = 'block';
