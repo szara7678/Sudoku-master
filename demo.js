@@ -876,6 +876,9 @@ function initialize() {
     var value = parseInt(difficulty.options[difficulty.selectedIndex].value);
     currentPuzzle = generatePuzzle(value);
     renderBoard(currentPuzzle);
+    if (checkButton.style.display === 'none') {
+            checkButton.style.display = 'block';
+        }
   }, false);
   
   var solveButton = document.getElementById('solveButton');
@@ -883,6 +886,7 @@ function initialize() {
   solveButton.addEventListener('click', function() {
     clearErrors();
     renderSolvedBoard(solveSudoku(currentPuzzle));
+    checkButton.style.display = 'none';
   }, false);
   
   addEventListener('mouseup', function(event) {

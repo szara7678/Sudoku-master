@@ -43,8 +43,10 @@
                             <input id="checkButton" type="submit" value="정답 확인 &#x2713;" class="gameControls"/>
                             <span id="errorsFound" class="errorsFound" style="display: none;" role="tab" aria-selected="true" aria-controls="ErrorsFound" tabindex="300">실수가 있어요!</span>
                             <span id="noErrors" class="noErrors" style="display: none;" role="tab" aria-selected="true" aria-controls="NoErrorsFound" tabindex="400">LOOKIN GOOD</span>
-<!--                            <input id="solveButton" type="submit" value="정답 보여주기" class="gameControls"/>-->
-                        </div>
+                            </div>
+                    <div class="gameControlSet">
+                        <input id="solveButton" type="submit" value="정답 보여주기" class="gameControls"/>
+                    </div>
                     <div id="sudokuBoard">
                         <table cellspacing="0" cellpadding="0">
                             <tr>
@@ -555,15 +557,15 @@
         </div>
         <div id="youWon" style="display: none;">
             <div>
-                <span role="alert" aria-selected="true" aria-controls="youWin" tabindex="500">YOU WIN!</span>
+                <span role="alert" aria-selected="true" aria-controls="문제 풀이 성공!" tabindex="500">YOU WIN!</span>
                 <br/>
                 <small role="tab" aria-selected="true" aria-controls="youWinText" tabindex="600">
-                    Great job. Can you do it again?
+                    잘 하셨습니다! 다른 문제도 풀어보시겠어요?
                 </small>
                 <br/>
                 <br/>
                 <input id="winNewGameButton" type="submit" value="새로운 게임" class="gameControls"/>
-                <input id="winCloseButton" type="submit" value="CLOSE" class="gameControls"/>
+                <input id="winCloseButton" type="submit" value="닫기" class="gameControls"/>
             </div>
         </div>
         <script type="text/javascript" src="demo.js">
