@@ -115,14 +115,15 @@ a:hover
 
 td.boardCellGroupA,td.boardCellGroupB
 {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.38);
+    border: 1px solid rgb(0, 0, 0);
 }
 
 td.boardCellGroupA td.boardCell
 {
     width: 32px;
     height: 32px;
-    border: 1px solid rgba(255, 255, 255, 0.33);
+    border: 2px solid rgba(255, 255, 255, 0.33);
     /*transform: scale(0.9); !* 요소를 99%로 축소 *!*/
     background-color: #ffffff;
 }
@@ -131,7 +132,7 @@ td.boardCellGroupB td.boardCell
 {
     width: 32px;
     height: 32px;
-    border: 1px solid rgba(255, 255, 255, 0.33);
+    border: 2px solid rgba(255, 255, 255, 0.33);
     /*transform: scale(0.9); !* 요소를 99%로 축소 *!*/
     background-color: #ffffff;
 }
