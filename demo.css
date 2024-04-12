@@ -31,7 +31,7 @@ b
 
 #Wrapper
 {
-    background: url('images/background.png') no-repeat top center;
+    /*background: url('images/background.png') no-repeat top center;*/
     min-height: 720px;
 }
 
@@ -79,9 +79,9 @@ a:hover
     width: 426px;
     margin-left: 40px;
     float: left;
-    box-shadow: 0px 0px 30px #680301;
-    -moz-box-shadow: 0px 0px 30px #680301;
-    -webkit-box-shadow: 0 0 30px #680301;
+    box-shadow: 0px 0px 30px #000000;
+    -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.51);
+    -webkit-box-shadow: 0 0 30px #000000;
 }
 
 #Column2
@@ -111,23 +111,23 @@ a:hover
 
 td.boardCellGroupA,td.boardCellGroupB
 {
-    background-color: #940302;
+    background-color: #000000;
 }
 
 td.boardCellGroupA td.boardCell
 {
     width: 44px;
     height: 44px;
-    border: 1px solid #EC0904;
-    background-color: #DA0603;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
 }
 
 td.boardCellGroupB td.boardCell
 {
     width: 44px;
     height: 44px;
-    border: 1px solid #D40703;
-    background-color: #C40502;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
 }
 
 .staticValue
@@ -136,7 +136,7 @@ td.boardCellGroupB td.boardCell
     text-align: center;
     vertical-align: middle;
     font-size: 30px;
-    color: #6C0000;
+    color: #000000;
 }
 
 .staticValue,.editValue
@@ -145,12 +145,12 @@ td.boardCellGroupB td.boardCell
     height: 42px;
     padding: 0px;
     margin: 0px;
-    border: 1px solid #DA0603;
+    border: 1px solid #000000;
 }
 
 .editValue:hover
 {
-    background: #940302;
+    background: #000000;
 }
 
 label
@@ -159,7 +159,7 @@ label
     top: 3px;
     line-height: 24px;
     font-size: 15px;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 select
@@ -194,7 +194,7 @@ select
 {
     font-family: Segoe UI, Arial;
     font-size: 30px;
-    color: #FFFFFF;
+    color: #f10a0a;
     width: 44px;
     /*height: 44px;*/
     padding: 0px;
@@ -210,7 +210,7 @@ input[type="submit"]
 {
     font-family: Arial;
     font-size: 18px;
-    color: #FFFFFF;
+    color: #000000;
     text-transform: uppercase;
     border: 0px;
     min-width: 162px;
@@ -245,7 +245,7 @@ input[type="submit"].gameControls
 #buttonSolve
 {
     margin-top: 119px;
-    color: #FFAEAE;
+    color: #f10a0a;
 }
 
 #youWon
@@ -279,17 +279,17 @@ small
 {
     font-size: 18px;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .errorsFound
 {
     font-size: 18px;
     font-weight: bold;
-    color: #ED823F;
+    color: #f10a0a;
 }
 
 .error
 {
-    border: 1px solid #ED823F;
+    border: 1px solid #f10a0a;
 }

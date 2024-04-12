@@ -755,8 +755,8 @@ function initialize() {
   
   var currentPuzzle = generatePuzzle();
   renderBoard(currentPuzzle);
-  
-  var amazeButton = document.getElementById('amazeButton');
+
+  // var amazeButton = document.getElementById('amazeButton');
   var calculatingDiv = document.getElementById('calculating');
   var finishedCalculatingDiv = document.getElementById('finishedCalculating');
   var winBlock = document.getElementById('youWon');
@@ -777,22 +777,22 @@ function initialize() {
     currentErrors = [];
   }
   
-  amazeButton.addEventListener('click', function() {
-    if(!amazing) {
-      var level = parseInt(difficulty.options[difficulty.selectedIndex].value);
-      amazing = true;
-      clearErrors();
-      finishedCalculatingDiv.style.display = 'none';
-      calculatingDiv.style.display = 'block';
- 
-      solveTest(level, function() {
-        finishedCalculatingDiv.style.display = 'block';
-        calculatingDiv.style.display = 'none';
-        amazing = false;
-        currentPuzzle = hardPuzzle;
-      });
-    }
-  }, false);
+  // amazeButton.addEventListener('click', function() {
+  //   if(!amazing) {
+  //     var level = parseInt(difficulty.options[difficulty.selectedIndex].value);
+  //     amazing = true;
+  //     clearErrors();
+  //     finishedCalculatingDiv.style.display = 'none';
+  //     calculatingDiv.style.display = 'block';
+  //
+  //     solveTest(level, function() {
+  //       finishedCalculatingDiv.style.display = 'block';
+  //       calculatingDiv.style.display = 'none';
+  //       amazing = false;
+  //       currentPuzzle = hardPuzzle;
+  //     });
+  //   }
+  // }, false);
   
   var checkButton = document.getElementById('checkButton');
   
