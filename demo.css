@@ -296,3 +296,10 @@ small
 {
     border: 1px solid #f10a0a;
 }
+
+@media (max-width: 400px) {
+    .boardCell, .boardCellGroupA, .boardCellGroupB {
+        width: 35px; /* 원래 크기보다 작게 조정 */
+        height: 35px; /* 원래 크기보다 작게 조정 */
+    }
+}
