@@ -139,8 +139,9 @@ td.boardCellGroupB td.boardCell
     font-family: Segoe UI, Arial;
     text-align: center;
     vertical-align: middle;
-    font-size: 20px;
+    font-size: 25px;
     color: #000000;
+    position: relative;
 }
 
 .staticValue,.editValue
@@ -198,7 +199,7 @@ select
 .editValue input
 {
     font-family: Segoe UI, Arial;
-    font-size: 24px;
+    font-size: 25px;
     color: #f10a0a;
     width: 32px;
     height: 32px;
