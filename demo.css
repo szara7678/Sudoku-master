@@ -92,16 +92,16 @@ a:hover
     -webkit-box-shadow: 0 0 30px #000000;
 }
 
-#Column2
-{
-    width: 174px;
-    margin-left: 40px;}
+/*#Column2*/
+/*{*/
+/*    width: 174px;*/
+/*    margin-left: 40px;}*/
 
-#Footer
-{
-    margin-top: 600px;
-    color: #910502;
-}
+/*#Footer*/
+/*{*/
+/*    margin-top: 600px;*/
+/*    color: #000000;*/
+/*}*/
 
 #FooterDetails
 {
@@ -130,7 +130,7 @@ td.boardCellGroupB td.boardCell
 {
     width: 32px;
     height: 32px;
-    border: 1px solid #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.64);
     background-color: #ffffff;
 }
 
@@ -155,7 +155,7 @@ td.boardCellGroupB td.boardCell
 
 .editValue:hover
 {
-    background: #000000;
+    background: rgba(0, 0, 0, 0.08);
 }
 
 label
